@@ -18,5 +18,5 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^todo/', include('todo.urls', namespace='todo', app_name='todo'))
+    url(r'^', include('reminderit.urls', namespace='reminderit', app_name='reminderit'))
 ]

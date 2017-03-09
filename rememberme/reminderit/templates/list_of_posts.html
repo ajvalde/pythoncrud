@@ -4,8 +4,8 @@
 
 {% block content %}
 
-    {% for rems in rem %}
-        <h2><a href="#">{{remss.name}}</a></h2>
+    {% for rems in rem.all %}
+        <h2><a href="{{rems.get_absolute_url}}">{{rems.name}}</a></h2>
         <p>{{rems.content|truncatewords:40|linebreaks}}</p>
         <p>created: {{rems.created}}</p>
 

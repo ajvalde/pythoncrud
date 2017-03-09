@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Remember? {% endblock%}
+
+{% block content %}
+
+        <h2>{{rem.name}}</h2>
+        <p>{{rem.content}}</p>
+        <p>created: {{rem.created|linebreaks}}</p>
+
+
+{% endblock %}
